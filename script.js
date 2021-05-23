@@ -44,7 +44,7 @@ function fetchGit(){
     {
       method: "POST",
       headers: {
-            'Authorization': 'Bearer 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',
+            'Authorization': `Bearer ${process.env.gitHubKey}`,
             'Content-Type': 'application/json'
         },
 
