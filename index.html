@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <script src="/script.js"></script> -->
+    
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github.com</title>
+</head>
+
+<body>
+
+    
+    <nav id="nav">
+        <div class="topnav" id="myTopnav">
+        
+    <ul>
+        <li><img id="git-icon" src="./images/github-icon.png">
+            <input type="search" name="Search or jump to..." placeholder="Search or jump to..." id="search"></li>
+    <a href="">Pull requests</a>
+    <a href=""">Issues</a>
+    <a href="">Marketplace</a>
+    <a href="">Explore</a>
+    <div class="tiny-icons">
+        <i class="fa fa-bell-o"  aria-hidden="true"></i>
+        <i class="fa fa-plus" style="margin-left: 5px;" aria-hidden="true"></i>
+        <i class="fa fa-caret-down" style="margin-left: 1px;" aria-hidden="true"></i>
+        <img src="/images/avatar.jpeg" id="avatar-icon">
+        <i class="fa fa-caret-down" aria-hidden="true"></i>
+
+    </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </ul>
+    
+
+   
+    </div>
+
+    </nav>
+    
+
+    <div class="tab">
+        
+        <button class="tablinks"><svg class="octicon octicon-book UnderlineNav-octicon hide-sm" height="14" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 1.75A.75.75 0 01.75 1h4.253c1.227 0 2.317.59 3 1.501A3.744 3.744 0 0111.006 1h4.245a.75.75 0 01.75.75v10.5a.75.75 0 01-.75.75h-4.507a2.25 2.25 0 00-1.591.659l-.622.621a.75.75 0 01-1.06 0l-.622-.621A2.25 2.25 0 005.258 13H.75a.75.75 0 01-.75-.75V1.75zm8.755 3a2.25 2.25 0 012.25-2.25H14.5v9h-3.757c-.71 0-1.4.201-1.992.572l.004-7.322zm-1.504 7.324l.004-5.073-.002-2.253A2.25 2.25 0 005.003 2.5H1.5v9h3.757a3.75 3.75 0 011.994.574z"></path></svg> Overview</button>
+       <button class="tablinks" id="repository"><svg height="14" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path></svg>Repositories<span class="repo-count">5</span></button>
+        <button class="tablinks"><svg height="14" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z"></path></svg>Projects</button>
+        <button class="tablinks"><svg class="octicon octicon-package UnderlineNav-octicon hide-sm" height="14" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.878.392a1.75 1.75 0 00-1.756 0l-5.25 3.045A1.75 1.75 0 001 4.951v6.098c0 .624.332 1.2.872 1.514l5.25 3.045a1.75 1.75 0 001.756 0l5.25-3.045c.54-.313.872-.89.872-1.514V4.951c0-.624-.332-1.2-.872-1.514L8.878.392zM7.875 1.69a.25.25 0 01.25 0l4.63 2.685L8 7.133 3.245 4.375l4.63-2.685zM2.5 5.677v5.372c0 .09.047.171.125.216l4.625 2.683V8.432L2.5 5.677zm6.25 8.271l4.625-2.683a.25.25 0 00.125-.216V5.677L8.75 8.432v5.516z"></path></svg>Packages</button>
+    
+      </div>
+      
+      <div id="Repositories" class="tabcontent">
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+      </div>
+
+      <div class="main-container">
+          <div class="avatar-container">
+              <div class="avi">
+                <img src="/images/avatar.jpeg" id="avatar">
+
+               <h3 class="card-names">
+                   <span class="p-name" id="name-p">Peju</span> <br>
+                   <span class="p-user" id="user-p">PejuSalami</span> <br> <br> 
+                   <span id="bioDesc">Frontend Developer</span>
+
+               </h3>
+
+
+            </div>
+          </div>
+          <div class="repo-container" id="container-repo">
+              <div class="no-repo">
+                  <h2>PejuSalami doesn’t have any public repositories yet.</h2>
+              </div>
+              <div>
+                <input type="text" id="repo-bar" name="" value="Find a repository..." readonly>
+              </div>
+              <div class="repos">
+                    <div class="repo-1">
+                        <h3 class="repo-text">
+                            <span class="repo-name"> <a href=""> Shapes-generator-react </a></span> <br>
+                            <span class="repo-dsc">AN SVG shpae generator created with react</span>
+                            <span ><button class="star">&#9734;star</button></span>
+                        </h3>
+                        <div class="item-contain">
+                        <div class="lang-container">
+                        <span class="lang-contain">
+                            <span class="repo-color"></span>
+                            <span class="repo-lang">JavaScript</span>
+                        </span>
+
+                        
+                        </div>
+                        <div class="stars-container">
+                            <span class="stars-contain">
+                                <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+                                <span class="repo-stars">1</i></span>
+                            </span>
+    
+                            
+                            </div>
+                        <div class="fork-container">
+                            <span class="fork-contain">
+                                <span><i class="fa fa-code-fork" aria-hidden="true"></i></span>
+                                <span class="repo-fork">5</span>
+                            </span>
+                            <span class="lang-contain">
+                            
+                                <span class="repo-lang">&nbsp &nbsp &nbsp Updated 18 days ago</span>
+                            </span>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+              </div>
+
+        </div>
+
+      </div>
+    <script>
+        function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+    </script>
+      
+      <script src="/script.js"></script>
+</body>
+</html>
